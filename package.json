@@ -1,0 +1,40 @@
+{
+  "name": "rest-node-ts",
+  "version": "2.0.0",
+  "main": "index.js",
+  "description": "A Node.js TypeScript template for REST API projects",
+  "author": "Artyom <artyom.u@outlook.com> Ulanchik",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsx watch --env-file=.env src/server.ts",
+    "build": "tsc && tsc-alias",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "express",
+    "rest-api"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@12.10.1",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.9",
+    "tsc-alias": "^1.9.7",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/morgan": "^1.9.10",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "morgan": "^1.12.1"
+  }
+}
